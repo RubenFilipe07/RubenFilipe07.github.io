@@ -6,3 +6,28 @@
     grid-template-areas: "a a a";
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .grid-repo{
+        padding: 15px 0px;
+        display: grid;
+        gap: 30px;
+        grid-auto-columns: 40%;
+        grid-template-areas: "a a";
+        justify-content: center;
+    }
+   }
+  
+
+@media only screen and (max-width: 620px) {
+    .grid-repo{
+        padding: 15px 0px;
+        display: grid;
+        gap: 30px;
+        grid-auto-columns: 80%;
+        grid-template-areas: "a";
+        justify-content: center;
+    }
+   }
+  
