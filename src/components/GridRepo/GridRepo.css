@@ -1,0 +1,8 @@
+.grid-repo{
+    padding: 15px 0px;
+    display: grid;
+    gap: 30px;
+    grid-auto-columns: 20%;
+    grid-template-areas: "a a a";
+    justify-content: center;
+}
