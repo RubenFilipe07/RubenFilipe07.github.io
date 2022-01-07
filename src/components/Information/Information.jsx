@@ -1,7 +1,7 @@
 import React from "react";
 import "./Information.css"
 
-const cardRepo = (props) => {
+const Information = (props) => {
     return(
         <div className="information">
             <h4>{props.information}</h4>
@@ -9,4 +9,4 @@ const cardRepo = (props) => {
     );
 }
 
-export default cardRepo;
+export default Information;

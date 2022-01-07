@@ -2,6 +2,10 @@ import React, { Fragment } from 'react';
 import axios from 'axios';
 import CardRepo from './components/CardRepo/CardRepo';
 import GridRepo from './components/GridRepo/GridRepo'
+import Information from './components/Information/Information'
+import PersonalInfo from './components/PersonalInfo/PersonalInfo';
+import PersonalLinks from './components/PersonalLinks/PersonalLinks';
+import Footer from './components/Footer/Footer'
 
 export default class App extends React.Component {
   state = {
@@ -19,6 +23,11 @@ export default class App extends React.Component {
   render() {
     return (
       <Fragment>
+        
+        <PersonalInfo />
+        <PersonalLinks />
+        <Information information="Meus Repositórios" />
+
         <GridRepo>
           {this.state.data.map(data =>
             <CardRepo key={data.id}>
@@ -31,6 +40,8 @@ export default class App extends React.Component {
             </CardRepo>
           )}
         </GridRepo>
+
+        <Footer></Footer>
       </Fragment>
     )
   }
