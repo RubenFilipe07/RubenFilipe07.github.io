@@ -11,22 +11,3 @@ div, p, h4{
   padding: 0;
   color: white;
 }
-
-@keyframes fade-in-slide {
-  0% {
-    transform: translateY(-40px);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-div{ 
-  animation: 0.7s ease 0s 1 normal forwards running fade-in-slide;
-}

@@ -1,5 +1,4 @@
-
-.footer{
+.footer {
     text-align: center;
 }
 
@@ -8,16 +7,40 @@
     color: #e9e9e9;
 }
 
-.react{
+.github {
+    color: #e9e9e9;
+}
+
+.github:visited {
+    color: #e9e9e9;
+}
+
+.react {
     color: #00c8ff;
     font-weight: 600;
 }
 
-.github:visited {
-    color: #ffffff;
-}
-
-.react:visited{
+.react:visited {
     color: #00c8ff;
 }
 
+@keyframes fade-in-slide {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    animation: 1.2s ease 0s 1 normal forwards running fade-in-slide;
+}

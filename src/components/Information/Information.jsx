@@ -4,7 +4,7 @@ import "./Information.css"
 const Information = (props) => {
     return(
         <div className="information">
-            <h4>{props.information}</h4>
+            <h1>{props.information}</h1>
         </div>
     );
 }

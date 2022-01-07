@@ -84,6 +84,32 @@
   }
 
   #C\+\+ {
-      background-color: rgba(101, 155, 211, 0.5);
-      border: 1px solid rgb(101, 154, 211);
+      background-color: rgba(0, 89, 157, 0.5);
+      border: 1px solid rgb(0, 123, 255)
   }
+
+  #Markdown {
+    background-color: rgba(54, 54, 54, 0.5);
+    border: 1px solid rgb(129, 129, 129);
+}
+
+  @keyframes fade-in-slide {
+    0% {
+        transform: translateY(-40px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card-item {
+    animation: 1.2s ease 0s 1 normal forwards running fade-in-slide;
+}
