@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import axios from 'axios';
 import CardRepo from './components/CardRepo/CardRepo';
 import GridRepo from './components/GridRepo/GridRepo'
-import Information from './components/Information/Information'
+import Heading from './components/Heading/Heading'
 import PersonalInfo from './components/PersonalInfo/PersonalInfo';
 import PersonalLinks from './components/PersonalLinks/PersonalLinks';
 import Footer from './components/Footer/Footer'
@@ -23,25 +23,15 @@ export default class App extends React.Component {
   render() {
     return (
       <Fragment>
-        
         <PersonalInfo />
         <PersonalLinks />
-        <Information information="Meus Repositórios" />
-
+        <Heading title="Meus Repositórios" />
         <GridRepo>
           {this.state.data.map(data =>
-            <CardRepo key={data.id}>
-              <h4><a href={data.html_url}>{data.name}</a></h4>
-              <p>{data.description}</p>
-              <div className='aditional-info'>
-                <span className='lang-info' id={data.language}>{data.language}</span>
-                <span className='fork-info'>{data.fork ? 'Forked' : ''}</span>
-              </div>
-            </CardRepo>
+            <CardRepo key={data.id} name={data.name} repoUrl={data.html_url} description={data.description} language={data.language} itsForked={data.fork}/>
           )}
         </GridRepo>
-
-        <Footer></Footer>
+        <Footer />
       </Fragment>
     )
   }

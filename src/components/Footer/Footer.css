@@ -1,5 +1,7 @@
 .footer {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 7px;
 }
 
 .footer, .footer a {
@@ -42,5 +44,5 @@
 }
 
 .footer {
-    animation: 1.2s ease 0s 1 normal forwards running fade-in-slide;
+    animation: 1.3s ease 0s 1 normal forwards running fade-in-slide;
 }

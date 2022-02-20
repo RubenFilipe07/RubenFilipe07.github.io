@@ -1,4 +1,4 @@
-.information h1{
+.heading h1{
     color: #ffff;
     font-size: 27pt;
     text-align: center;
@@ -21,6 +21,6 @@
     }
 }
 
-.information {
+.heading {
     animation: 0.7s ease 0s 1 normal forwards running fade-in-slide;
 }

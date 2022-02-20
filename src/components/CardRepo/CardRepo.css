@@ -10,12 +10,13 @@
       background-color: #1a1e22;
   }
 
-  .card-item a, h4, p {
+  .card-item a, h1, p {
       color: #ffffff;
   }
 
-  .card-item h4 {
+  .card-item h1 {
       text-transform: capitalize;
+      font-size: medium;
   }
 
   .card-item p {
